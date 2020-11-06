@@ -1,0 +1,9 @@
+<mat-select
+  [value]="selectedLanguage"
+  (selectionChange)="languageChanged($event)">
+  <mat-option
+    *ngFor="let language of languages; let i = index"
+    [value]="i">
+    {{language}}
+  </mat-option>
+</mat-select>

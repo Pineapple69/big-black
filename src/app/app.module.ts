@@ -12,6 +12,12 @@ import {BasicInfoComponent} from './components/home/basic-info/basic-info.compon
 import {LanguagePickerComponent} from './components/header/language-picker/language-picker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
+import {FooterComponent} from './components/footer/footer.component';
+import {CommonModule} from '@angular/common';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {CarouselItemComponent} from './components/home/carousel/carousel-item/carousel-item.component';
+import {TranslateService} from './services/translate.service';
+import {NewsService} from './services/news.service';
 
 @NgModule({
   declarations: [
@@ -21,17 +27,23 @@ import {MatSelectModule} from '@angular/material/select';
     HeaderComponent,
     CarouselComponent,
     BasicInfoComponent,
-    LanguagePickerComponent
+    LanguagePickerComponent,
+    FooterComponent,
+    CarouselItemComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSelectModule
+    MatSelectModule,
+    IvyCarouselModule
   ],
   providers: [
-    TranslatePipe
+    TranslatePipe,
+    TranslateService,
+    NewsService
   ],
   bootstrap: [AppComponent]
 })

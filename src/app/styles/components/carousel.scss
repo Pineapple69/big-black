@@ -1,0 +1,31 @@
+@import "../global";
+
+.carousel {
+  &-item {
+    width: 100%;
+
+    &-container {
+    }
+
+    &-image {
+      &-container {
+      }
+    }
+
+    &-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      @extend .global-flex-column;
+      @extend .global-flex-justify-content-center;
+      @extend .global-flex-align-items-center;
+
+      &-title {
+      }
+
+      &-message {
+      }
+    }
+  }
+}
