@@ -1,6 +1,18 @@
-<carousel>
-  <app-carousel-item
-    *ngFor="let carouselItem of carouselItems"
-    [carouselItem]="carouselItem">
-  </app-carousel-item>
-</carousel>
+<div class="global-center">
+  <carousel
+    [width]="600"
+    [height]="400"
+    [cellWidth]="600"
+    [cellsToShow]="1"
+    [cellsToScroll]="1"
+    [loop]="true"
+    [dots]="true">
+    <div
+      class="carousel-cell carousel-item"
+      *ngFor="let carouselItem of carouselItems">
+      <app-carousel-item
+        [carouselItem]="carouselItem">
+      </app-carousel-item>
+    </div>
+  </carousel>
+</div>

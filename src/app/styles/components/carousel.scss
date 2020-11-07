@@ -1,14 +1,30 @@
-@import "../global";
+@import "../global.scss";
 
 .carousel {
+  //&-container {
+  //  @extend .global-flex;
+  //  @extend .global-flex-justify-content-center;
+  //  @extend .global-flex-align-items-center;
+  //}
+
   &-item {
-    width: 100%;
+    width: 600px !important;
 
     &-container {
+      //width: fit-content;
+      @extend .global-max-height;
     }
 
     &-image {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      background-color: gainsboro;
+
       &-container {
+        //width: fit-content;
+        @extend .global-max-height;
+        @extend .global-flex;
+        @extend .global-flex-align-items-center;
       }
     }
 

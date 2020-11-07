@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Locale} from '../enums/locale.enum';
-import * as staticTranslations from '../static/translations.json';
+import * as staticTranslations from '../../assets/translations.json';
 
 @Injectable({
   providedIn: 'root',

@@ -1,4 +1,12 @@
 .global {
+  &-max-height {
+    height: 100%;
+  }
+
+  &-max-width {
+    width: 100%;
+  }
+
   &-flex {
     display: flex;
 
@@ -27,5 +35,11 @@
         }
       }
     }
+  }
+
+  &-center {
+    @extend .global-flex;
+    @extend .global-flex-justify-content-center;
+    @extend .global-flex-align-items-center;
   }
 }
