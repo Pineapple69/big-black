@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '../../../services/translate.service';
-import {MatSelectChange} from '@angular/material/select';
 import {Locale} from '../../../enums/locale.enum';
 
 @Component({
@@ -13,7 +12,7 @@ export class LanguagePickerComponent {
 
   constructor(public translateService: TranslateService) {}
 
-  public languageChanged(newLanguage: MatSelectChange): void {
+  public languageChanged(newLanguage: any): void {
     this.translateService.setCurrentLocale(newLanguage.value as Locale);
   }
 }

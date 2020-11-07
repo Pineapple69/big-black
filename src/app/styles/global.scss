@@ -10,6 +10,12 @@
   &-flex {
     display: flex;
 
+    &-center {
+      @extend .global-flex;
+      @extend .global-flex-align-items-center;
+      @extend .global-flex-justify-content-center;
+    }
+
     &-row {
       @extend .global-flex;
       flex-direction: row;

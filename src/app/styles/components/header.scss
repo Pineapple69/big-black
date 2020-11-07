@@ -1,0 +1,27 @@
+@import "../global.scss";
+
+.header {
+  &-shop-name {
+    @extend .global-flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  &-button {
+    width: 10vw;
+    padding: 1.5vh;
+    margin: 0.2vh;
+    &-container {
+      @extend .global-flex;
+      flex: 7;
+      justify-content: flex-end;
+    }
+  }
+
+  &-container {
+    @extend .global-flex-row;
+    @extend .global-flex-align-items-center;
+    @extend .global-max-width;
+    background-color: lightgrey;
+  }
+}

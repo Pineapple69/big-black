@@ -1,6 +1,13 @@
-<div>
+<div class="header-container">
+  <div class="header-shop-name">
+    {{shopName}}
+  </div>
   <div>
-    {{'shop-name' | translate}}
+    <button
+      *ngFor="let tab of navbarTabs"
+      class="header-button">
+      {{tab | translate}}
+    </button>
   </div>
   <app-language-picker>
   </app-language-picker>

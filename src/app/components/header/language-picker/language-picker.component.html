@@ -1,9 +1,9 @@
-<mat-select
-  [value]="selectedLanguage"
-  (selectionChange)="languageChanged($event)">
-  <mat-option
+<select
+  class="header-button"
+  [value]="selectedLanguage">
+  <option
     *ngFor="let language of languages; let i = index"
     [value]="i">
     {{language}}
-  </mat-option>
-</mat-select>
+  </option>
+</select>

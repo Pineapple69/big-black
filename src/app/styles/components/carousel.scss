@@ -1,14 +1,13 @@
 @import "../global.scss";
 
 .carousel {
-  //&-container {
-  //  @extend .global-flex;
-  //  @extend .global-flex-justify-content-center;
-  //  @extend .global-flex-align-items-center;
-  //}
+  &-custom-container {
+    @extend .global-flex-center;
+    margin-top: 3vh;
+  }
 
   &-item {
-    width: 600px !important;
+    width: 1000px !important;
 
     &-container {
       //width: fit-content;

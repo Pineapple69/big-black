@@ -19,7 +19,7 @@ export class TranslateService {
   }
 
   public translate(key: string): string {
-    const translation = this.translations.get(key).get(this.currentLocale);
+    const translation = this.translations.get(key)?.get(this.currentLocale);
     return translation ? translation : key;
   }
 

@@ -11,13 +11,15 @@ import {CarouselComponent} from './components/home/carousel/carousel.component';
 import {BasicInfoComponent} from './components/home/basic-info/basic-info.component';
 import {LanguagePickerComponent} from './components/header/language-picker/language-picker.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
 import {FooterComponent} from './components/footer/footer.component';
 import {CommonModule} from '@angular/common';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import {CarouselItemComponent} from './components/home/carousel/carousel-item/carousel-item.component';
 import {TranslateService} from './services/translate.service';
 import {NewsService} from './services/news.service';
+import {ContactComponent} from './components/contact/contact.component';
+import {AboutComponent} from './components/about/about.component';
+import {SellInfoComponent} from './components/sell-info/sell-info.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import {NewsService} from './services/news.service';
     BasicInfoComponent,
     LanguagePickerComponent,
     FooterComponent,
-    CarouselItemComponent
+    CarouselItemComponent,
+    ContactComponent,
+    AboutComponent,
+    SellInfoComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +42,6 @@ import {NewsService} from './services/news.service';
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSelectModule,
     IvyCarouselModule
   ],
   providers: [
